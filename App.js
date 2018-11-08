@@ -19,7 +19,6 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 import Home from './App/QuestionScreen/Home'
-type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (

@@ -24,7 +24,6 @@ export default class Home extends Component<Props> {
 getQuiz() {
     console.log()
     fetch('https://opentdb.com/api.php?amount=10&category=18&difficulty=easy&type=multiple').then((res) => res.json()).then((resp) => {
-        console.log(resp.results,'llllllllllllllllllll')
         this.setState({quizzes: resp.results});
 }).catch(() => {
         this.setState({quizzes: []})
